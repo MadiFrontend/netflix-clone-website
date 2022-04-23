@@ -32,9 +32,9 @@ export default function Register() {
                     <p>
                         Ready to watch? Enter your email to create or restart
                         your membership.
-                    </p>{
-                        !email ? (
-                                <div className="input">
+                    </p>
+                    {!email ? (
+                        <div className="input">
                             <input
                                 type="email"
                                 placeholder="Email Address"
@@ -47,8 +47,8 @@ export default function Register() {
                                 Get Started
                             </button>
                         </div>
-                        ) : (
-                            <form className="input">
+                    ) : (
+                        <form className="input">
                             <input
                                 type="password"
                                 placeholder="password"
@@ -61,8 +61,7 @@ export default function Register() {
                                 Start
                             </button>
                         </form>
-                        ) }
-                    
+                    )}
                 </div>
             </div>
         </div>
